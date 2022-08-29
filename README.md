@@ -1,3 +1,3 @@
-# My own Personal-
+# Ab Folio
 
-my personal portfolio, showing my developed projects and skills
+my personal portfolio, showing my developed projects and skills.

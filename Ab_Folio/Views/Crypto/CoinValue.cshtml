@@ -1,0 +1,33 @@
+﻿@using Ab_Folio.Models
+@using Ab_Folio.Controllers;
+@model Ab_Folio.Objecten.Crypto
+@{
+    ViewData["Title"] = "Calculate Coin Value";
+}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<br />
+<br />
+<br />
+<br />
+<div class="container BackgroundTable LoadFromBottom">
+    <h2>Coin calculater</h2>
+    <label for="CryptoCurrency">Choose the crypto currency</label>
+    <select id="cryptoId" class="custom-select" aria-label="Default select example" name="cryptoNameField" required>
+        @foreach (KeyValuePair<string, Coin> c in Model.CoinsLibrary)
+        {
+            <option class="imagebacked" value="@c.Key">@c.Value.Name</option>
+        }
+    </select>
+    <br />
+    <label for="cryptoAmount">The amount of your crypto coins</label>
+    <input type="number" min="0" class="form-control" name="cryptoAmountField" id="cryptoAmount" placeholder="Enther the amount of crypto you have" required>
+    <br />
+    <input type="button" id="btnGet" class="btn btn-primary" style="margin-bottom: 5px;" value="how much money do you have" />
+</div>
+<br />
+<br />
+<div style="display: none;" class="container  text-center " id="valueContainer">
+    <p id="textValueCrypto"></p>
+</div>
+<script src="~/js/Ajax/Ajax.js"></script>
+<script src="~/js/Crypto_Methods/Crypto.js"></script>

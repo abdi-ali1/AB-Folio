@@ -1,6 +1,7 @@
 ﻿using Ab_Folio.Models;
 using Ab_Folio.Objecten;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 
 
@@ -10,14 +11,20 @@ namespace Ab_Folio.Controllers
 {
     public class CryptoController : Controller
     {
-
+        /// <summary>
+        /// Redirect to the cryptolist View and passes the object 'crypto' 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult CryptoList()
         {
            
             return View(CryptoObject());   
         }
 
-
+        /// <summary>
+        /// Redirect to the CoinValue View and passes the object 'crypto' 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult CoinValue()
         {
             return View(CryptoObject());
@@ -33,7 +40,7 @@ namespace Ab_Folio.Controllers
         }
 
         /// <summary>
-        /// returns the result as a json object
+        /// passes the posted values ​​to the 'GetValueOfCoins' method and returns the response
         /// </summary>
         /// <param name="id"></param>
         /// <param name="amount"></param>

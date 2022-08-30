@@ -13,16 +13,27 @@ namespace Ab_Folio.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// redirects to the Index View
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// redirects to the  privacy View
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Privacy()
         {
             return View();
         }
-
+        /// <summary>
+        ///  shows given error and redirects to the Error View
+        /// </summary>
+        /// <returns></returns>
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -23,7 +23,7 @@ namespace Ab_Folio.Objecten
         }
 
         /// <summary>
-        /// Intialezes thr Setcoin method
+        /// Intialezes the Setcoin method
         /// </summary>
         public Crypto()
         {
@@ -31,8 +31,7 @@ namespace Ab_Folio.Objecten
         }
 
         /// <summary>
-        /// retrieves first a json string from a rest api, 
-        /// after that it will set the Dictionary coins
+        /// sets the retrieved values ​​from the json file to the Coinslibrary
         /// </summary>
         private void SetCoins()
         {
@@ -81,9 +80,9 @@ namespace Ab_Folio.Objecten
             }
         }
 
-      
+
         /// <summary>
-        /// calculates the value of amount of coins you have
+        /// calculate the value given number of coins
         /// </summary>
         /// <param name="id"></param>
         /// <param name="amount"></param>

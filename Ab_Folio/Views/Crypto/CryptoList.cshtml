@@ -10,29 +10,31 @@
 <div class="container">
     <h2>Cypto List</h2>
     <div class="Scroll">
-        <table class="table rounded BackgroundTable  LoadFromBottom ">
+        <table class="table">
             <thead>
-                <tr class="p">
-                    <th scope="col">#</th>
-                    <th scope="col">CoinName</th>
-                    <th scope="col">Symbol</th>
-                    <th scope="col">Value of coin</th>
-                    <th scope="col">24h change percentage</th>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>24h %</th>
+
                 </tr>
             </thead>
             <tbody>
                 @foreach (KeyValuePair<string, Coin> c in Model.CoinsLibrary)
                 {
-                    <tr class="p">
-                        <td>@c.Key</td>
-                        <td><img src="@c.Value.imgUrl" width="25"> @c.Value.Name</td>
-                        <td>@c.Value.Symbol</td>
-                        <td>€@c.Value.CoinValue</td>
-                        <td class="Price_Change_Container">@c.Value.Price_Change_24h %</td>
+                    <tr>
+                        <td class="p">@c.Key</td>
+                        <td class="p"><img src="@c.Value.imgUrl" width="25"> <strong> @c.Value.Name</strong> <span class="text-secondary">@c.Value.Symbol.ToUpper()</span> </td>
+                        <td class="p">€@c.Value.CoinValue</td>
+                        <td class="Price_Change_Container p">@c.Value.Price_Change_24h%</td>
                     </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
+
+
+
 <script src="~/js/Crypto_Methods/Crypto.js"></script>

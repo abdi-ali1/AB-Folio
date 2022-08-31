@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "osaszE+OUNUnWjinHxQWtnQNiX3KBisZ933g/7HFdvM=",
+  "Hash": "3nYXvGEakkII4lWrW2o/UQ7hq+1ia/KvDlgcv77cr3A=",
   "Source": "Ab_Folio",
   "BasePath": "_content/Ab_Folio",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\abdi1\\source\\repos\\Ab_Folio\\Ab_Folio\\wwwroot\\Documents\\Ciratum_CV_IT_EN_Abdi_Ali.docx",
+      "SourceId": "Ab_Folio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abdi1\\source\\repos\\Ab_Folio\\Ab_Folio\\wwwroot\\",
+      "BasePath": "_content/Ab_Folio",
+      "RelativePath": "Documents/Ciratum_CV_IT_EN_Abdi_Ali.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\Ciratum_CV_IT_EN_Abdi_Ali.docx"
+    },
+    {
+      "Identity": "C:\\Users\\abdi1\\source\\repos\\Ab_Folio\\Ab_Folio\\wwwroot\\Documents\\Ciratum_CV_IT_EN_Abdi_Ali.pdf",
+      "SourceId": "Ab_Folio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abdi1\\source\\repos\\Ab_Folio\\Ab_Folio\\wwwroot\\",
+      "BasePath": "_content/Ab_Folio",
+      "RelativePath": "Documents/Ciratum_CV_IT_EN_Abdi_Ali.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\Ciratum_CV_IT_EN_Abdi_Ali.pdf"
     },
     {
       "Identity": "C:\\Users\\abdi1\\source\\repos\\Ab_Folio\\Ab_Folio\\wwwroot\\favicon.ico",

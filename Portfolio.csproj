@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\document\**" />
+    <Compile Remove="wwwroot\js\WebGame\**" />
+    <Content Remove="wwwroot\document\**" />
+    <Content Remove="wwwroot\js\WebGame\**" />
+    <EmbeddedResource Remove="wwwroot\document\**" />
+    <EmbeddedResource Remove="wwwroot\js\WebGame\**" />
+    <None Remove="wwwroot\document\**" />
+    <None Remove="wwwroot\js\WebGame\**" />
+    <TypeScriptCompile Remove="wwwroot\document\**" />
+    <TypeScriptCompile Remove="wwwroot\js\WebGame\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.7.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\Ajax\Ajax.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+</Project>

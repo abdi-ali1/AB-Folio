@@ -1,0 +1,109 @@
+html {
+    font-size: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.background {
+    background: url('../Img/portiofio.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.Scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 40rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: gray;
+        opacity: 0.8;
+    }
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+    .nav-link:hover {
+        color: black !important;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes SmallToBIG {
+    0% {
+        opacity: 0;
+        transform: translateZ(0) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+@keyframes SlideBottem {
+    0% {
+        opacity: 0;
+        transform: translateY(12.5%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+
+
+.hero{
+    animation: 1.5s ease-out 0s 1 SmallToBIG;
+}
+
+.LoadFromBottom {
+    animation: 1s ease-out 0s 1 SlideBottem;
+}
